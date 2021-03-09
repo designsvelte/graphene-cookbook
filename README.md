@@ -68,3 +68,10 @@ Test verileri ```cookbook/malzemeler/fixtures/malzemelers.json``` klasörüne y�
 
 ```py .\manage.py loaddata .\cookbook\malzemeler\fixtures\malzemelers.json```
 çıktı: Installed 6 object(s) from 1 fixture(s)
+
+#### Admin panel kullanıcısı oluşturuluyor.
+```python
+py manage.py createsuperuser
+py manage.py migrate
+py manage.py makemigrations
+```
