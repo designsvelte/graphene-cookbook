@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'cookbook.malzemeler',
+    'graphene_django',
 ]
 
 MIDDLEWARE = [
@@ -49,6 +50,9 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+GRAPHENE = {
+    "SCHEMA": "cookbook.schema.schema"
+}
 
 ROOT_URLCONF = 'cookbook.urls'
 

@@ -6,7 +6,7 @@ from cookbook.malzemeler.models import Category, Malzemeler
 class CategoryType(DjangoObjectType):
     class Meta:
         model = Category
-        fields = ("id", "name", "ingredients")
+        fields = ("id", "name", "malzemelers")
 
 class MazlzemelerType(DjangoObjectType):
     class Meta:
@@ -14,7 +14,7 @@ class MazlzemelerType(DjangoObjectType):
         fields = ("id", "name", "notes", "category")
 
 class Query(graphene.ObjectType):
-    all_ingredients = graphene.List(MazlzemelerType)
+    all_malzemelers = graphene.List(MazlzemelerType)
     category_by_name = graphene.Field(CategoryType, name=graphene.String(required=True))
 
     def resolve_all_malzemelers(root, info):
