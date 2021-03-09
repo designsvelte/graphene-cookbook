@@ -27,7 +27,7 @@ py manage.py makemigrations
 ```python
 INSTALLED_APPS = [
     ...
-    # Install the ingredients app
+    # Install the malzemeler app
     "cookbook.malzemeler",
 ]
 
