@@ -85,4 +85,4 @@ admin.site.register(Category)
 admin.site.register(Malzemeler)
 
 ```
-#### <a href="https://docs.graphene-python.org/projects/django/en/latest/tutorial-plain/" target="_blank">Devamı burada</a> 
+#### <a href="https://docs.graphene-python.org/projects/django/en/latest/tutorial-plain/" target='_blank'>Devamı burada</a> 
