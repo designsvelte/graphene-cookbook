@@ -1,7 +1,7 @@
 # graphene-cookbook
 Graphene Öğreniyorum
 
-```python
+```editorconfig
 echo "# graphene-cookbook" >> README.md
 git init
 git add README.md
@@ -9,8 +9,9 @@ git commit -m "ilk commit"
 git branch -M main
 git remote add origin https://github.com/form90/graphene-cookbook.git
 git push -u origin main
-
-
+```
+#### Sanal ortam, django ve projeyi kur
+```python
 virtualenv env
 .\env\Scripts\activate
 pip3 install --user --upgrade pip veya
