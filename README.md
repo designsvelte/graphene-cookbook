@@ -10,7 +10,7 @@ git branch -M main
 git remote add origin https://github.com/form90/graphene-cookbook.git
 git push -u origin main
 
-<<<<<<< HEAD
+
 virtualenv env
 .\env\Scripts\activate
 pip3 install --user --upgrade pip veya
@@ -23,7 +23,7 @@ py manage.py migrate
 py manage.py makemigrations
 ```
 
-# cookbook/settings.py
+#### cookbook/settings.py
 ```python
 INSTALLED_APPS = [
     ...
