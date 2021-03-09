@@ -31,8 +31,10 @@ INSTALLED_APPS = [
     "cookbook.malzemeler",
 ]
 
+```
+#### Veritabanı güncelle
+```python
 py manage.py migrate
 py manage.py makemigrations
 
 ```
->>>>>>> 586e2490abd2a3206c39ea41b1da1af3d1af5b34
