@@ -23,7 +23,6 @@ django-admin startapp malzemeler
 py manage.py migrate
 py manage.py makemigrations
 ```
-
 #### cookbook/settings.py
 ```python
 INSTALLED_APPS = [
@@ -38,4 +37,30 @@ INSTALLED_APPS = [
 py manage.py migrate
 py manage.py makemigrations
 
+```
+### Modeli tanımlıyoruz
+#### cookbook/malzemeler/models.py
+```python
+from django.db import models
+
+class Category(models.Model):
+    name = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.name
+
+class Malzemeler(models.Model):
+    name = models.CharField(max_length=100)
+    notes = models.TextField()
+    category = models.ForeignKey(
+        Category, related_name="malzemelers", on_delete=models.CASCADE
+    )
+
+    def __str__(self):
+        return self.name
+```
+Bunu çalıştırmayı unutma
+```python
+py manage.py migrate
+py manage.py makemigrations
 ```
