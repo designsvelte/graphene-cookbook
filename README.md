@@ -65,5 +65,6 @@ py manage.py migrate
 py manage.py makemigrations
 ```
 Test verileri ```cookbook/malzemeler/fixtures/malzemelers.json``` klasörüne yüklendi.
+
 ```py .\manage.py loaddata .\cookbook\malzemeler\fixtures\malzemelers.json```
 çıktı: Installed 6 object(s) from 1 fixture(s)
