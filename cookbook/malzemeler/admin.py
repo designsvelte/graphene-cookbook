@@ -1,3 +1,5 @@
 from django.contrib import admin
+from cookbook.malzemeler.models import Category, Malzemeler
 
-# Register your models here.
+admin.site.register(Category)
+admin.site.register(Malzemeler)

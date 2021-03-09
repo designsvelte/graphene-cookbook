@@ -75,3 +75,13 @@ py manage.py createsuperuser
 py manage.py migrate
 py manage.py makemigrations
 ```
+#### Modeller admin panele ekleniyor
+cookbook/malzemeler/admin.py
+```python
+from django.contrib import admin
+from cookbook.malzemeler.models import Category, Malzemeler
+
+admin.site.register(Category)
+admin.site.register(Malzemeler)
+
+```
