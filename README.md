@@ -1,5 +1,5 @@
 # graphene-cookbook
-Graphene Öðreniyorum
+Graphene Ã–ÄŸreniyorum
 
 ```python
 virtualenv env
