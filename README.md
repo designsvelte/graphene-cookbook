@@ -21,9 +21,10 @@ cd cookbook
 django-admin startapp malzemeler
 py manage.py migrate
 py manage.py makemigrations
+```
 
 # cookbook/settings.py
-
+```python
 INSTALLED_APPS = [
     ...
     # Install the ingredients app
@@ -32,7 +33,6 @@ INSTALLED_APPS = [
 
 py manage.py migrate
 py manage.py makemigrations
-```
-=======
+
 ```
 >>>>>>> 586e2490abd2a3206c39ea41b1da1af3d1af5b34
